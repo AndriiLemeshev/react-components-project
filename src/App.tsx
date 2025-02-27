@@ -1,9 +1,13 @@
-import ClassicComponent from "./ClassicComponent"
+import ClassicComponent from "./ClassicComponentCounter"
+import CounterUseReducer from "./CounterUseReducer"
+import CounterUseState from "./CounterUseState"
 
 function App() {
   return (
     <>
-      <ClassicComponent initialCount={0} secondsNumber={3} />
+      <p>ClassicComponent: <ClassicComponent initialCount={0} /></p>
+      <p>CounterUseReducer: <CounterUseReducer initialCount={0} /></p>
+      <p>CounterUseState: <CounterUseState initialCount={0} /></p>
     </>
   )
 }
